@@ -72,6 +72,13 @@ async def timesave_notif(ctx):
     await ctx.send("""I'm horribly inconsistent and also currently running the beginner route, so timesaves are everywhere in the run. Specifically,
                         Cannonless, Owlless, Bowser 1 Reds, MIPS clips, and Bowser 3.""")
 
+@bot.command(name='setup')
+async def setup(ctx):
+    """
+    Explain game setup
+    """
+    await ctx.send("I'm running the WiiU version on Cemu v1.24.0. Using Switch Pro controller.")
+    
 @bot.command(name='so')
 async def shoutout(ctx):
     """
